@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpowerXLMS</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins";
+        font-size: 14px;
+        background-color: #eee;
+      }
+      main {
+        /* border: 0.2rem solid #333; */
+        width: 35rem;
+      }
+      form {
+        padding: 1.6rem 1.2rem;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+      }
+      .lms-title {
+        background-color: #333;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 2.4rem;
+      }
+      input {
+        outline: none;
+        border: none;
+        background-color: #eee;
+        width: 80%;
+        padding: 1.2rem 1.2rem;
+        margin: 0.6rem;
+      }
+      .checkbox {
+        padding: initial;
+        margin: initial;
+        width: auto;
+        text-align: right;
+      }
+      img {
+        width: 95%;
+      }
+      .sucess-button {
+        background-color: green;
+        color: #fff;
+      }
+      .more-options {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .link {
+        text-decoration: none;
+      }
+      .forgot {
+        color: red;
+      }
+      .sign-up {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="" class="form">
+        <img src="assets/EmpowerX-Logo.png" alt="EmpowerX Logo" />
+        <p class="lms-title">Learning Management System</p>
+        <p>Please Sign in with your EmpowerX account.</p>
+        <input
+          type="text"
+          placeholder="Username or Email here"
+          name="email"
+          id="email"
+        /><br />
+        <input
+          type="password"
+          placeholder="Password here"
+          name="password"
+          id="password"
+        /><br />
+        <input type="checkbox" name="stillLogin" class="checkbox" />
+        Keep me sign in?
+        <input type="submit" value="Sign In" class="sucess-button" />
+        <section class="more-options">
+          <a href="" class="link forgot">Forgot Password?</a>
+          <a href="signUp.html" class="link sign-up">Not Registered? Sign Up</a>
+        </section>
+      </form>
+    </main>
+    <script>
+      const form = document.querySelector(".form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let email = form.email.value;
+        let password = form.password.value;
+        let stillSign = form.stillLogin.value;
+        console.log(email, password, stillSign);
+      });
+    </script>
+  </body>
+</html>

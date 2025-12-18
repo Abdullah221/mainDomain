@@ -44,23 +44,12 @@
         padding: 1.2rem 1.2rem;
         margin: 0.6rem;
       }
-      .checkbox {
-        padding: initial;
-        margin: initial;
-        width: auto;
-        text-align: right;
-      }
       img {
         width: 95%;
       }
       .sucess-button {
         background-color: green;
         color: #fff;
-      }
-      .more-options {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
       }
       .link {
         text-decoration: none;
@@ -81,33 +70,43 @@
         <p>Please Sign in with your EmpowerX account.</p>
         <input
           type="text"
-          placeholder="Username or Email here"
-          name="email"
-          id="email"
+          placeholder="Full Name"
+          name="fullName"
+          id="fullName"
         /><br />
+        <input type="text" placeholder="Email" name="email" id="email" /><br />
         <input
           type="password"
-          placeholder="Password here"
+          placeholder="Password"
           name="password"
           id="password"
         /><br />
-        <input type="checkbox" name="stillLogin" class="checkbox" />
-        Keep me sign in?
-        <input type="submit" value="Sign In" class="sucess-button" />
-        <section class="more-options">
-          <a href="" class="link forgot">Forgot Password?</a>
-          <a href="signUp.html" class="link sign-up">Not Registered? Sign Up</a>
-        </section>
+        <input
+          type="password"
+          placeholder="Retype Password here"
+          name="repassword"
+          id="repassword"
+        /><br />
+        <input type="submit" value="Sign In" class="sucess-button" /><br />
+        <a href="login.html" class="link sign-up">Already have an Account!</a>
       </form>
     </main>
     <script>
       const form = document.querySelector(".form");
       form.addEventListener("submit", function (e) {
         e.preventDefault();
+        let fullName = form.fullName.value;
         let email = form.email.value;
         let password = form.password.value;
-        let stillSign = form.stillLogin.value;
-        console.log(email, password, stillSign);
+        let repassword = form.repassword.value;
+        if (password === repassword) {
+          console.log(email, password, fullName);
+        } else {
+          let passwordInvalid = document.createElement("p");
+          passwordInvalid.innerText = "Password Don't Match";
+          form.appendChild(passwordInvalid);
+        }
+        console.log(email, password);
       });
     </script>
   </body>

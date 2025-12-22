@@ -17,6 +17,11 @@
       }
       body {
         background-color: #eee;
+        color: #333;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
       }
       .logo {
         width: 20rem;
@@ -36,7 +41,18 @@
         font-size: 1.8rem;
         margin: 1rem 0rem;
       }
+      h3 {
+        font-weight: 500;
+      }
+      h4 {
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none;
+        color: orangered;
+      }
       .section-title {
+        color: #fff;
         background-color: orangered;
         padding: 1.2rem;
         font-size: 1.6rem;
@@ -49,6 +65,14 @@
         padding: 1.2rem;
         font-size: 1.4rem;
         border: 1px solid #ddd;
+      }
+      .btn {
+        display: inline-block;
+        /* width: 2.4rem; */
+        padding: 1.2rem;
+        /* background-color: #333; */
+        text-decoration: none;
+        color: orangered;
       }
       .flex {
         display: flex;
@@ -101,8 +125,8 @@
               <h4>Diploma Information Technology (Week 1/12)</h4>
             </section>
             <section class="course-updates">
-              <button>Topics</button>
-              <button>Annuncment</button>
+              <a href="course-details.html" class="btn">Topics</a>
+              <a href="course-announcment.html" class="btn">Annuncment</a>
             </section>
           </section>
           <section class="previous-courses">
@@ -116,18 +140,25 @@
               <h4>Diploma Information Technology (Week 1/12)</h4>
             </section>
             <section class="course-updates">
-              <button>Excecise</button>
-              <button>Notes</button>
+              <a href="certificate.html" class="btn">Certificate</a>
             </section>
           </section>
         </section>
         <section class="col-4">
           <section class="notice-board">
             <h3 class="section-title">Notice Board</h3>
-            <section class="services section-body">
+            <section class="services flex section-body">
               <article class="service">
-                <img src="" alt="service img" class="service-img" />
-                <p>Service Name</p>
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>News & Events</p>
+                </a>
+              </article>
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Important Links</p>
+                </a>
               </article>
             </section>
           </section>
@@ -135,12 +166,57 @@
             <h3 class="section-title">My Activites</h3>
             <section class="services section-body flex">
               <article class="service">
-                <img src="" alt="service img" class="service-img" />
-                <p>Service Name</p>
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Exercises</p>
+                </a>
               </article>
               <article class="service">
-                <img src="" alt="service img" class="service-img" />
-                <p>Service Name</p>
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Quizzes</p>
+                </a>
+              </article>
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Discussions</p>
+                </a>
+              </article>
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>My Notes</p>
+                </a>
+              </article>
+            </section>
+          </section>
+          <section class="my-activities">
+            <h3 class="section-title">Trainee Services</h3>
+            <section class="services section-body flex">
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>My Results</p>
+                </a>
+              </article>
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Progress Timeline</p>
+                </a>
+              </article>
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Success Stories</p>
+                </a>
+              </article>
+              <article class="service">
+                <a href="">
+                  <img src="" alt="service img" class="service-img" />
+                  <p>Online Support</p>
+                </a>
               </article>
             </section>
           </section>

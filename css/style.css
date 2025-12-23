@@ -1,0 +1,95 @@
+/* Special Sections */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+  font-family: "Poppins";
+}
+body {
+  background-color: #eee;
+  color: #333;
+}
+header {
+  background-color: #333;
+  color: #fff;
+}
+.logo {
+  width: 20rem;
+  align-items: center;
+}
+.logo img {
+  width: 80%;
+}
+.account {
+  width: 20rem;
+}
+/* Universal Classes */
+main {
+  padding: 1.2rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 1rem 0rem;
+}
+h3 {
+  font-weight: 500;
+}
+h4 {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: orangered;
+}
+.section-title {
+  color: #fff;
+  background-color: orangered;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+}
+.section-body {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+}
+.btn {
+  display: inline-block;
+  /* width: 2.4rem; */
+  padding: 1.2rem;
+  /* background-color: #333; */
+  text-decoration: none;
+  color: orangered;
+}
+.menu-btn {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.row {
+  display: flex;
+  gap: 1.2rem;
+}
+.col-8 {
+  width: 70%;
+}
+.col-4 {
+  width: 30%;
+}
+footer {
+  width: 100%;
+  text-align: center;
+}
